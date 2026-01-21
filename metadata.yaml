@@ -1,8 +1,0 @@
----
-Category: 'tool'
-Description: 'GitHub action for testing and checking R packages with R CMD check'
-Maintainers: ['someone@mednet.ucla.edu', 'someoneelse@mednet.ucla.edu']  # email address of maintainers
-Contributors: 'Xavier Hernandez'  # Full names of contributors
-Languages: ['R', 'YAML']
-Dependencies: ['devtools', 'testthat']
-References: ''

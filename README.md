@@ -7,7 +7,7 @@ Runs `R CMD check` for testing and validating R packages
 This action runs a comprehensive `R CMD check`, including all CRAN checks and running all tests. It caches the latest version of R, as well as all package dependencies for the project. Packages that have not been updated since the last workflow run will not be reinstalled. This can reduce the action's runtime by about an order of magnitude.
 
 ## Using the Action
-Simply add the step `uses: uclahs-cds/tool-R-CMD-check-action@v1` to a repository workflow. For example:
+Simply add the step `uses: TheBoutrosLab/tool-R-CMD-check-action@v1` to a repository workflow. For example:
 
 ```
 ---
@@ -20,14 +20,14 @@ jobs:
   R-CMD-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: uclahs-cds/tool-R-CMD-check-action@stable
+      - uses: TheBoutrosLab/tool-R-CMD-check-action@v2
 ```
 
 ## Usage
 
-To test your R package with this action, simply add a step with `uses: uclahs-cds/tool-R-CMD-check-action@v2` to your GitHub CI/CD workflow. See the [R package template](https://github.com/uclahs-cds/template-R-package/blob/main/.github/workflows/R-CMD-check.yaml) for a full example.
+To test your R package with this action, simply add a step with `uses: TheBoutrosLab/tool-R-CMD-check-action@v2` to your GitHub CI/CD workflow. See the [R package template](https://github.com/TheBoutrosLab/template-R-package/blob/main/.github/workflows/R-CMD-check.yaml) for a full example.
 
-Some packages require OS-level dependencies to work properly. Simply add a step to your workflow to install these dependencies before running this `R CMD check` action. See [BoutrosLab.plotting.general](https://github.com/uclahs-cds/package-BoutrosLab-plotting-general/blob/main/.github/workflows/R-CMD-check.yaml) for a full example.
+Some packages require OS-level dependencies to work properly. Simply add a step to your workflow to install these dependencies before running this `R CMD check` action. See [BoutrosLab.plotting.general](https://github.com/TheBoutrosLab/package-BoutrosLab-plotting-general/blob/main/.github/workflows/R-CMD-check.yaml) for a full example.
 
 ```
 - name: Install system graphics dependencies
@@ -45,7 +45,7 @@ Author: Name1(username1@mednet.ucla.edu), Name2(username2@mednet.ucla.edu)
 
 <one line to give the project/program's name and a brief idea of what it does.>
 
-Copyright (C) 2021 University of California Los Angeles ("Boutros Lab") All rights reserved.
+Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab") All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
