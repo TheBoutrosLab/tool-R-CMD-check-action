@@ -9,6 +9,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-01-21
+
+### Changed
+- Update organization to `TheBoutrosLab`
+
 ## [2.0.0] - 2025-08-20
 
 ### Changed
